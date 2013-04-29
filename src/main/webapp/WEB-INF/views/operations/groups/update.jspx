@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" 
+	xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" 
+	xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+	
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    
+    <form:update id="fu_com_hakilisoft_asuivre_operations_domain_OAGroup" modelAttribute="group" path="/operations/groups" versionField="Version">
+        <field:input field="name" id="c_com_hakilisoft_asuivre_operations_domain_OAGroup_name" required="true"/>
+        <field:input field="description" id="c_com_hakilisoft_asuivre_operations_domain_OAGroup_description"/>
+        <field:input field="membersCount" id="c_com_hakilisoft_asuivre_operations_domain_OAGroup_membersCount" />
+<!--         
+        <field:select field="users" id="c_com_hakilisoft_asuivre_operations_domain_OAGroup_users" itemValue="id" items="${users}" multiple="true" path="/operations/users" />
+ -->        
+    </form:update>
+    
+</div>

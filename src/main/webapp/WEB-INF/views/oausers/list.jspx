@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_hakilisoft_asuivre_operations_domain_OAUser" items="${oausers}" z="OrpRWKFu1Q5G1EzY5/e9IqKGf+s=">
+        <table:table data="${oausers}" id="l_com_hakilisoft_asuivre_operations_domain_OAUser" path="/oausers" z="rF2hD2H0zyqZWwzGyY3wTvmUYtk=">
+            <table:column id="c_com_hakilisoft_asuivre_operations_domain_OAUser_userName" property="userName" z="xKw7gs2mSuRqy4bQJrUIuGgO+pY="/>
+            <table:column id="c_com_hakilisoft_asuivre_operations_domain_OAUser_firstName" property="firstName" z="OAFARrDWOTJx4P89fFnjfrlDr7c="/>
+            <table:column id="c_com_hakilisoft_asuivre_operations_domain_OAUser_lastName" property="lastName" z="+ICn2tK07k1geHL62wiSteXl8dg="/>
+            <table:column id="c_com_hakilisoft_asuivre_operations_domain_OAUser_password" property="password" z="UAcfE/lpBWF1wzYJbmPDtOP544I="/>
+            <table:column id="c_com_hakilisoft_asuivre_operations_domain_OAUser_email" property="email" z="t4F39zZVfYEo1gUy1ENpGzU5PW0="/>
+            <table:column id="c_com_hakilisoft_asuivre_operations_domain_OAUser_confirmPassword" property="confirmPassword" z="O112fqX5s0fzLIUSK1+DKfBbHzE="/>
+        </table:table>
+    </page:list>
+</div>

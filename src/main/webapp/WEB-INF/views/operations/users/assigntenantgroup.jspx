@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" 	 
+	xmlns:jsp="http://java.sun.com/JSP/Page" 
+	xmlns:form="http://www.springframework.org/tags/form"
+	xmlns:spring="http://www.springframework.org/tags" 
+	xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" 
+	xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+	
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    
+    <spring:url value="/operations/usermanagement/users/assigntenantsgroups" var="assign_user_url" />
+    
+	<div class="span10">
+	
+		<c:if test="${not empty assignedUser}">
+			<div class="row-fluid">
+				<div class="span2">
+					User :
+				</div>
+				<div class="span9">
+					${assignedUser.userName}
+				</div>
+			</div>
+		</c:if>	
+		
+	    <form:form action="${assign_user_url}" method="POST" modelAttribute="userAssignForm">
+		
+			<div class="row-fluid">
+					
+				<c:choose>
+					<c:when test="${empty assignedUser}">
+						<div class="span3">
+							<div class="span3">User's </div>
+							<div class="span3">
+								<form:select path="userName">
+								    <form:options items="${userNames}" />
+								</form:select>				
+							</div>
+						</div>
+					</c:when>
+					<c:otherwise>
+						<input type="hidden" name="userName" value="${assignedUser.userName}"/>
+					</c:otherwise>
+				</c:choose>
+					
+				
+				<div class="span3">
+				
+					<form:select path="tenantBusinessKey">
+					    <form:options items="${tenantBusinessKeys}" />
+					</form:select>				
+					
+				</div>
+				<div class="span3">
+				
+					<form:select path="groupName">
+					    <form:options items="${groupNames}" />
+					</form:select>				
+				
+				</div>
+				<div class="span2">
+					<button type="submit" name="action" value="search" class="btn btn-small"><span class="icon-search"></span></button>
+					<button type="submit" name="action" value="assign" class="btn btn-small"><span class="icon-plus-sign"></span></button>
+					<button type="submit" name="action" value="assignmentform" class="btn btn-small"><span class="icon-forward"></span></button>
+				</div>
+			</div>
+		
+		</form:form>
+		
+
+		<p class="row-fluid" style="margin-top">
+			<h3>user's role In tenant</h3>
+			<table class="table table-bordered">
+				<THEAD>
+					<tr>
+						<th>Tenant</th><th>Role Name</th><th>Actions</th>
+					</tr>
+				</THEAD>
+				<TBODY>
+				
+				    <c:forEach var="urt" items="${userRoleInTenants}">
+						<tr>
+							<TD>${urt.tenantBusinessKey}</TD>
+							<TD>${urt.groupName}</TD>
+							<TD><a href="#">remove</a></TD>
+						</tr>
+					</c:forEach>
+					
+				</TBODY>
+			</table>
+		</p>
+	</div>
+    
+</div>

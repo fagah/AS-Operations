@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page"
+	xmlns:spring="http://www.springframework.org/tags" 
+	xmlns:menu="urn:jsptagdir:/WEB-INF/tags/menu" id="menu" version="2.0">
+	
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    
+    <spring:url value="/operations" var="home_operations_url" />
+       
+   <div class="row-fluid">
+	   <div style="margin-left:25px;margin-right:25px;width: 95.5%">
+	   	    <ul class="breadcrumb">
+		    	<li><a href="${home_operations_url}">Home</a> <span class="divider">/</span></li>
+		    	<li class="active"><spring:message code="label_com_hakilisoft_asuivre_operations_domain_oatenant_plural" /> <span class="divider">/</span></li>
+		    </ul>
+	   </div>
+   </div> 
+</div>

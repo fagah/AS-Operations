@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_hakilisoft_asuivre_operations_domain_OATenant" modelAttribute="OATenant_" path="/oatenants" versionField="Version" z="o2h+Wk77RQm3RkQ+tw5Svyq+sDE=">
+        <field:input field="name" id="c_com_hakilisoft_asuivre_operations_domain_OATenant_name" required="true" z="jeOsYp9ogAOQXC3uJ22pomiplPI="/>
+        <field:input field="businessKey" id="c_com_hakilisoft_asuivre_operations_domain_OATenant_businessKey" required="true" z="xdg8W/jpad33TnVVrDNwp9O2aIs="/>
+        <field:datetime dateTimePattern="${OATenant__creationdate_date_format}" field="creationDate" id="c_com_hakilisoft_asuivre_operations_domain_OATenant_creationDate" z="x3H0J6J2euUV88LFs41oRkBwsIc="/>
+        <field:datetime dateTimePattern="${OATenant__modificationdate_date_format}" field="modificationDate" id="c_com_hakilisoft_asuivre_operations_domain_OATenant_modificationDate" z="Se8H8zB2UAqoExb1rJuNVGf1g8E="/>
+        <field:input field="createdBy" id="c_com_hakilisoft_asuivre_operations_domain_OATenant_createdBy" z="7EqBIxQXE+X4p8WLrnJtW1HGcUc="/>
+        <field:input field="modifiedBy" id="c_com_hakilisoft_asuivre_operations_domain_OATenant_modifiedBy" z="12ngEFf4SW4eQmaF5NLMnF85aqA="/>
+        <field:select field="users" id="c_com_hakilisoft_asuivre_operations_domain_OATenant_users" itemValue="id" items="${oausers}" multiple="true" path="/oausers" z="5a638W0DYBEP3kbqM5g+F49SCNk="/>
+    </form:update>
+</div>

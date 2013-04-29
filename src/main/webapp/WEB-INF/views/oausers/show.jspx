@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_hakilisoft_asuivre_operations_domain_OAUser" object="${oauser_}" path="/oausers" z="443jdmY9AXQicNzwdMYs7FTWpx8=">
+        <field:display field="userName" id="s_com_hakilisoft_asuivre_operations_domain_OAUser_userName" object="${oauser_}" z="6MFV4cC82VBBvjY4Hf8XsI/TF0g="/>
+        <field:display field="firstName" id="s_com_hakilisoft_asuivre_operations_domain_OAUser_firstName" object="${oauser_}" z="gVfHpQTBV65+xOqbfJqckRnCiHc="/>
+        <field:display field="lastName" id="s_com_hakilisoft_asuivre_operations_domain_OAUser_lastName" object="${oauser_}" z="m7cpsfPQ0+Rv9ZqJnhuY2eUnZoo="/>
+        <field:display field="password" id="s_com_hakilisoft_asuivre_operations_domain_OAUser_password" object="${oauser_}" z="x0jbyEmXZnUYnv6b1Q9g79IiLeA="/>
+        <field:display field="email" id="s_com_hakilisoft_asuivre_operations_domain_OAUser_email" object="${oauser_}" z="ro45+X64KnvTZxlbQfXl/+Ymyb0="/>
+        <field:display field="tenantBusinessKey" id="s_com_hakilisoft_asuivre_operations_domain_OAUser_tenantBusinessKey" object="${oauser_}" z="buniyc2NDiIaxsUoVeauNyNzjsk="/>
+        <field:display date="true" dateTimePattern="${OAUser__creationdate_date_format}" field="creationDate" id="s_com_hakilisoft_asuivre_operations_domain_OAUser_creationDate" object="${oauser_}" z="HleD0HynFONOi/IO21nKz4+qwJo="/>
+        <field:display field="createdBy" id="s_com_hakilisoft_asuivre_operations_domain_OAUser_createdBy" object="${oauser_}" z="KWZurLqFaKGwAk1slL6Hd5PLxQ4="/>
+        <field:display date="true" dateTimePattern="${OAUser__modificationdate_date_format}" field="modificationDate" id="s_com_hakilisoft_asuivre_operations_domain_OAUser_modificationDate" object="${oauser_}" z="orPupFZY+H7FffScMJgJgVlEwQY="/>
+        <field:display field="modifiedBy" id="s_com_hakilisoft_asuivre_operations_domain_OAUser_modifiedBy" object="${oauser_}" z="NW19jedcz1tI4S5Pzi8Tb0AbGrU="/>
+        <field:display field="groupName" id="s_com_hakilisoft_asuivre_operations_domain_OAUser_groupName" object="${oauser_}" z="NWtu2OL/MXEcEVPRKA5aPz0z4W4="/>
+        <field:display field="tenantName" id="s_com_hakilisoft_asuivre_operations_domain_OAUser_tenantName" object="${oauser_}" z="W4+4wYicW9jQCZMXhoVJr0JFfc8="/>
+        <field:display field="confirmPassword" id="s_com_hakilisoft_asuivre_operations_domain_OAUser_confirmPassword" object="${oauser_}" z="sHJ4RP4692x6AGUdogpptcPKteE="/>
+        <field:display field="tenants" id="s_com_hakilisoft_asuivre_operations_domain_OAUser_tenants" object="${oauser_}" z="dG+QU7UxmdnhH4g+0dfHNVz/nLI="/>
+        <field:display field="groups" id="s_com_hakilisoft_asuivre_operations_domain_OAUser_groups" object="${oauser_}" z="XV6dRyEqP3euU+ez2xsFVuZ4BfI="/>
+        <field:display field="tenantGroupNames" id="s_com_hakilisoft_asuivre_operations_domain_OAUser_tenantGroupNames" object="${oauser_}" z="+QOERV5TMV5xsSEd3B9lZMSl0JY="/>
+    </page:show>
+</div>

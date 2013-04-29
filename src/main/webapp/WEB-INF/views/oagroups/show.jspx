@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_hakilisoft_asuivre_operations_domain_OAGroup" object="${oagroup_}" path="/oagroups" z="9uafSTGzlj2Lqbi491DhaNr7FGg=">
+        <field:display field="name" id="s_com_hakilisoft_asuivre_operations_domain_OAGroup_name" object="${oagroup_}" z="MAdHe955hm8MS3kI8F6AIIn9yxw="/>
+        <field:display field="description" id="s_com_hakilisoft_asuivre_operations_domain_OAGroup_description" object="${oagroup_}" z="cZbq0+yW66jeN7WtCgCZgrBSBEs="/>
+        <field:display field="tenantBusinessKey" id="s_com_hakilisoft_asuivre_operations_domain_OAGroup_tenantBusinessKey" object="${oagroup_}" z="u9STKD5qHbSMxAKr7sYbMGuahlk="/>
+        <field:display date="true" dateTimePattern="${OAGroup__creationdate_date_format}" field="creationDate" id="s_com_hakilisoft_asuivre_operations_domain_OAGroup_creationDate" object="${oagroup_}" z="LcyCI+Tp9VtBzpQNA3tZ37HgKbA="/>
+        <field:display date="true" dateTimePattern="${OAGroup__modificationdate_date_format}" field="modificationDate" id="s_com_hakilisoft_asuivre_operations_domain_OAGroup_modificationDate" object="${oagroup_}" z="v2Llv5RG38THkVQFXZIDL8TuIMw="/>
+        <field:display field="createdBy" id="s_com_hakilisoft_asuivre_operations_domain_OAGroup_createdBy" object="${oagroup_}" z="8WLjfgtQgaLZ4+wnMqLuYZG5i+k="/>
+        <field:display field="users" id="s_com_hakilisoft_asuivre_operations_domain_OAGroup_users" object="${oagroup_}" z="pmL9ITi8BDDPHHpo0peThOt//Bg="/>
+    </page:show>
+</div>

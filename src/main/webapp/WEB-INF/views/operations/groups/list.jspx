@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" 
+	xmlns:page="urn:jsptagdir:/WEB-INF/tags/form"
+	xmlns:spring="http://www.springframework.org/tags" 
+	xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+	
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    
+    <spring:url value="group?size=5" var="create_group_url"/>
+    
+	<p class="row-fluid" style="margin-left:25px;">
+		<page:create id="fc_com_hakilisoft_asuivre_operations_domain_OAGroup" modelAttribute="group" path="${create_group_url}"  openPane="false">
+			<table:input field="name" id="c_com_hakilisoft_asuivre_operations_domain_OAGroup_name" required="true"/>
+   			<table:input field="description" id="c_com_hakilisoft_asuivre_operations_domain_OAGroup_description" />
+		</page:create>
+	</p>
+
+	<p class="row-fluid">
+	    <page:list id="pl_com_hakilisoft_asuivre_operations_domain_OAGroup" items="${groups}">
+	        <table:table data="${groups}" id="l_com_hakilisoft_asuivre_operations_domain_OAGroup" path="/operations/usermanagement/groups" create="false" delete="false" update="false">
+	            <table:column id="c_com_hakilisoft_asuivre_operations_domain_OAGroup_name" property="name" />
+	            <table:column id="c_com_hakilisoft_asuivre_operations_domain_OAGroup_description" property="description" />
+			<!--<table:column id="c_com_hakilisoft_asuivre_operations_domain_OAGroup_membersCount" property="membersCount" />
+	            <table:column id="c_com_hakilisoft_asuivre_operations_domain_OAGroup_users" property="users" />-->			            
+	        </table:table>
+	    </page:list>
+	</p>
+</div>

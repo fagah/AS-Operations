@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_hakilisoft_asuivre_operations_domain_OATenant" items="${oatenants}" z="VPJmBDQWeFhMeJLDjapG98gCI8I=">
+        <table:table data="${oatenants}" id="l_com_hakilisoft_asuivre_operations_domain_OATenant" path="/oatenants" z="ubW/KB6MylA6JY11M65D/gg6laA=">
+            <table:column id="c_com_hakilisoft_asuivre_operations_domain_OATenant_name" property="name" z="7WUJTrmM07y9aBR9jskJXwFoEyM="/>
+            <table:column id="c_com_hakilisoft_asuivre_operations_domain_OATenant_businessKey" property="businessKey" z="F/+N/3shshaAGjSccGP/9P9psuc="/>
+            <table:column date="true" dateTimePattern="${OATenant__creationdate_date_format}" id="c_com_hakilisoft_asuivre_operations_domain_OATenant_creationDate" property="creationDate" z="PjsNpy3eF6Q6JdR9tA7YQrEDObs="/>
+            <table:column date="true" dateTimePattern="${OATenant__modificationdate_date_format}" id="c_com_hakilisoft_asuivre_operations_domain_OATenant_modificationDate" property="modificationDate" z="RGUN8sFb2O24BrtmPEMlYah39OM="/>
+            <table:column id="c_com_hakilisoft_asuivre_operations_domain_OATenant_createdBy" property="createdBy" z="V0hU6OYmYuCZsCrsmeh3zsnc3ys="/>
+            <table:column id="c_com_hakilisoft_asuivre_operations_domain_OATenant_modifiedBy" property="modifiedBy" z="8DqxPG7OjsROMwmKKt49vRGZan4="/>
+        </table:table>
+    </page:list>
+</div>

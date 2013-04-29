@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_hakilisoft_asuivre_operations_domain_OAUser" modelAttribute="OAUser_" path="/oausers" versionField="Version" z="BAk4PbjARy1yWHHShqFY+c5H3LM=">
+        <field:input field="userName" id="c_com_hakilisoft_asuivre_operations_domain_OAUser_userName" required="true" z="lj85wBGWU2R8wDgZNSu7e9hxdGw="/>
+        <field:input field="firstName" id="c_com_hakilisoft_asuivre_operations_domain_OAUser_firstName" required="true" z="hnB6W6baj/r7rCErOb1IgY3HkRo="/>
+        <field:input field="lastName" id="c_com_hakilisoft_asuivre_operations_domain_OAUser_lastName" required="true" z="9DDCLceBtKVb2X2tyX9aO3cvg4o="/>
+        <field:input field="password" id="c_com_hakilisoft_asuivre_operations_domain_OAUser_password" required="true" z="mJ6Zq8l4Lqssup34+WNlHq3SHSY="/>
+        <field:input field="email" id="c_com_hakilisoft_asuivre_operations_domain_OAUser_email" required="true" validationMessageCode="field_invalid_email" z="e97bC3OCALW/1Cn9TKILABNlgc0="/>
+        <field:input field="tenantBusinessKey" id="c_com_hakilisoft_asuivre_operations_domain_OAUser_tenantBusinessKey" z="vBY4jL4Jo55YDTf18ZYpTYPG3EU="/>
+        <field:datetime dateTimePattern="${OAUser__creationdate_date_format}" field="creationDate" id="c_com_hakilisoft_asuivre_operations_domain_OAUser_creationDate" z="xRk7KKaaPDDLzJ/T8u3tmtlQZhk="/>
+        <field:input field="createdBy" id="c_com_hakilisoft_asuivre_operations_domain_OAUser_createdBy" z="T2abkgmAkKvsbeyzNrA70Bvh3Y4="/>
+        <field:datetime dateTimePattern="${OAUser__modificationdate_date_format}" field="modificationDate" id="c_com_hakilisoft_asuivre_operations_domain_OAUser_modificationDate" z="FNH//0pkXTg1QiHOUirP5A3/GB4="/>
+        <field:input field="modifiedBy" id="c_com_hakilisoft_asuivre_operations_domain_OAUser_modifiedBy" z="LYZoUgNz/DAKzGvRXp2KwyyKGck="/>
+        <field:input field="groupName" id="c_com_hakilisoft_asuivre_operations_domain_OAUser_groupName" z="++f8xv6sZxGoZL0nqE+6MTYeVSk="/>
+        <field:input field="tenantName" id="c_com_hakilisoft_asuivre_operations_domain_OAUser_tenantName" z="+XYvpILJhvIa75Y8hUWRNxwv+TU="/>
+        <field:input field="confirmPassword" id="c_com_hakilisoft_asuivre_operations_domain_OAUser_confirmPassword" required="true" z="Byl3bPJER/EQ/9/CfnIpIn2mrKY="/>
+        <field:select field="tenants" id="c_com_hakilisoft_asuivre_operations_domain_OAUser_tenants" itemValue="id" items="${oatenants}" multiple="true" path="/oatenants" z="/IMvShMKgHVyWPgSaGNKSo3O/d8="/>
+        <field:select field="groups" id="c_com_hakilisoft_asuivre_operations_domain_OAUser_groups" itemValue="id" items="${oagroups}" multiple="true" path="/oagroups" z="avr7AQHH9JGvHp3TQO5efDwmpqs="/>
+        <field:input field="tenantGroupNames" id="c_com_hakilisoft_asuivre_operations_domain_OAUser_tenantGroupNames" z="z0D82/5XJVwNWaujZnqZfRP4Phk="/>
+    </form:update>
+</div>

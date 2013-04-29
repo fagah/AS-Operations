@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page"
+	xmlns:spring="http://www.springframework.org/tags" 
+	xmlns:menu="urn:jsptagdir:/WEB-INF/tags/menu" id="menu" version="2.0">
+	
+   <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+   <jsp:output omit-xml-declaration="yes"/>
+    <spring:url var="home" value="/operations" />
+   <spring:url value="/operations/tenants?form" var="create_tenant_url" />
+   <spring:url value="/operations/tenants?page=1&amp;size=${empty param.size ? 5 : param.size}" var="list_tenants_url" />
+    
+   <spring:url value="/operations/usermanagement/groups?form" var="create_group_url" />
+   <spring:url value="/operations/usermanagement/groups?page=1&amp;size=${empty param.size ? 5 : param.size}" var="list_groups_url" />
+    
+   <spring:url value="/operations/usermanagement/users?form" var="create_user_url" />
+   <spring:url value="/operations/usermanagement/users?page=1&amp;size=${empty param.size ? 5 : param.size}" var="list_users_url" />
+   <spring:url value="/operations/usermanagement/users/assignmentform" var="assign_form_url"/>
+        
+   <spring:url value="/operations/activity/activitystream?form" var="create_activitystream_url" />
+   <spring:url value="/operations/activity/activitystream?page=1&amp;size=${empty param.size ? 5 : param.size}" var="list_activity_url" />
+   <spring:url value="/operations/activity/serveraccess/list" var="server_access_url" />
+       
+   <div class="row-fluid">
+	   <div>
+	    	<ul class="nav nav-list" style="margin-right:15px;">
+	    		<li class="nav-header" style="color:black;">Navigation</li>
+    			<li id="home_link">
+    				<a href="${home}">Home</a>
+				</li>
+				<li id="tenants_link">
+					<a href="${list_tenants_url}">
+						<spring:message code="menu_item_oatenant_list_label" />
+					</a>
+				</li>
+				<li id="groups_link">
+					<a class="dropdown-toggle" href="${list_groups_url}">
+						<spring:message code="menu_item_oagroup_list_label" />
+					</a>
+				</li>
+				<li class="dropdown-submenu" id="users_link">
+					<a class="dropdown-toggle" href="#" data-toggle="dropdown">
+						<spring:message code="menu_item_oauser_list_label"/>
+						<!-- <span class="icon-user" style="float:right"></span> -->
+					</a>
+					 <ul class="dropdown-menu">
+						<!-- dropdown menu links -->
+							<li><a href="${list_users_url}"><spring:message code="menu_item_oauser_list_label"/></a></li>
+							<li><a href="${assign_form_url}">Assignment</a></li>
+					 </ul>
+				</li>
+				<li class="dropdown-submenu" id="activity_link">
+					<a class="dropdown-toggle" href="${list_activity_url}"  data-toggle="dropdown">
+						<spring:message code="menu_category_oaactivity_label"/>
+					</a>
+					 <ul class="dropdown-menu">
+						<!-- dropdown menu links -->
+							<li><a href="${list_activity_url}"><spring:message code="menu_category_oaactivity_label"/></a></li>
+							<li><a href="${server_access_url}">Server Access</a></li>
+					 </ul>
+				</li>
+    		</ul>
+	   </div>
+   </div>
+   <INPUT type="hidden" value="${currentNavigationvalue}" id="current-navigation"/>
+    
+</div>

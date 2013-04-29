@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" 
+	xmlns:page="urn:jsptagdir:/WEB-INF/tags/form"
+	xmlns:spring="http://www.springframework.org/tags" 
+	xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+	
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+
+	<p class="row-fluid">
+	    <page:list id="pl_com_hakilisoft_asuivre_operations_domain_OAActivitystream" items="${activitystream}">
+	        <table:table data="${activitystream}" id="l_com_hakilisoft_asuivre_operations_domain_OAActivitystream" path="/operations/activity/activitystream" create="false" delete="false" update="false">
+	            <table:column id="c_com_hakilisoft_asuivre_operations_domain_OAActivitystream_tenantBusinessKey" property="tenantBusinessKey" />
+	            <table:column id="c_com_hakilisoft_asuivre_operations_domain_OAActivitystream_event" property="event" />
+	            <table:column id="c_com_hakilisoft_asuivre_operations_domain_OAActivitystream_createdBy" property="createdBy" />
+	            <table:column id="c_com_hakilisoft_asuivre_operations_domain_OAActivitystream_creationDate" property="creationDate" />
+	        </table:table>
+	    </page:list>
+	</p>
+
+</div>

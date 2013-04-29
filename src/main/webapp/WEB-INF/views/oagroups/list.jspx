@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_hakilisoft_asuivre_operations_domain_OAGroup" items="${oagroups}" z="6iVk6QIS6FhmNmi+0EAOq8N5Ykc=">
+        <table:table data="${oagroups}" id="l_com_hakilisoft_asuivre_operations_domain_OAGroup" path="/oagroups" z="9vBPFRe22x93szRf5BgS1bBVreI=">
+            <table:column id="c_com_hakilisoft_asuivre_operations_domain_OAGroup_name" property="name" z="HivjcyH9BQ6XLqxpMB89lodL5Rg="/>
+            <table:column id="c_com_hakilisoft_asuivre_operations_domain_OAGroup_description" property="description" z="EgWX7dNPKb/oDQ2gW6bEqbEuJ0I="/>
+            <table:column id="c_com_hakilisoft_asuivre_operations_domain_OAGroup_tenantBusinessKey" property="tenantBusinessKey" z="EEXDK7GIXqC8LKWfOpFlJimNlFU="/>
+            <table:column date="true" dateTimePattern="${OAGroup__creationdate_date_format}" id="c_com_hakilisoft_asuivre_operations_domain_OAGroup_creationDate" property="creationDate" z="q8rMsCKx2qrI0kOcvMXreyVJu9c="/>
+            <table:column date="true" dateTimePattern="${OAGroup__modificationdate_date_format}" id="c_com_hakilisoft_asuivre_operations_domain_OAGroup_modificationDate" property="modificationDate" z="kPC5gP4aOMJuzZer9yyxd4vamn4="/>
+            <table:column id="c_com_hakilisoft_asuivre_operations_domain_OAGroup_createdBy" property="createdBy" z="gpqq2elfNZDRk63zvN/X+7bw2EA="/>
+        </table:table>
+    </page:list>
+</div>
