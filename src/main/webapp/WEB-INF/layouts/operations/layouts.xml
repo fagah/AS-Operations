@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+
+<tiles-definitions>
+<!-- 
+  <definition name="default" template="/WEB-INF/layouts/default.jspx">
+    <put-attribute name="header" value="/WEB-INF/views/header.jspx" />
+    <put-attribute name="menu" value="/WEB-INF/views/menu.jspx" />
+    <put-attribute name="footer" value="/WEB-INF/views/footer.jspx" />
+  </definition>
+ -->
+  <definition name="opdefault" template="/WEB-INF/layouts/operations/opdefault.jspx">
+    <put-attribute name="header" value="/WEB-INF/views/operations/header.jspx" />
+    <put-attribute name="menu" value="/WEB-INF/views/operations/menu.jspx" />
+    <put-attribute name="footer" value="/WEB-INF/views/operations/footer.jspx" />
+  </definition>
+  
+  <definition name="op-layout" template="/WEB-INF/layouts/operations/op-layout.jspx">
+    <put-attribute name="header" value="/WEB-INF/views/header.jspx" />
+    <!-- <put-attribute name="menu" value="/WEB-INF/views/operations/topmenu.jspx" /> -->
+    <put-attribute name="footer" value="/WEB-INF/views/footer.jspx" />
+  </definition>
+  
+  <definition name="oatwocolumns" template="/WEB-INF/layouts/operations/oatwocolumns.jspx">
+    <put-attribute name="header" value="/WEB-INF/views/operations/header.jspx" />
+    <put-attribute name="sitemap" value="/WEB-INF/views/operations/sitemap.jspx" />
+    <put-attribute name="leftside" value="/WEB-INF/views/operations/leftside.jspx" />
+    <put-attribute name="body" value="/WEB-INF/views/operations/index.jspx" />
+    <put-attribute name="footer" value="/WEB-INF/views/footer.jspx" />
+  </definition>
+  
+  	<definition name="oadefault" template="/WEB-INF/layouts/operations/oadefault.jspx">
+		<put-attribute name="header" value="/WEB-INF/views/operations/header.jspx" />
+		<put-attribute name="topnavigation" value="/WEB-INF/views/operations/topmenu.jspx" />
+		<put-attribute name="body" value="/WEB-INF/views/operations/index.jspx" />
+		<put-attribute name="footer" value="/WEB-INF/views/operations/footer.jspx" />
+	</definition>
+
+
+  <definition name="public" template="/WEB-INF/layouts/default.jspx">
+    <put-attribute name="header" value="/WEB-INF/views/header.jspx" />
+    <put-attribute name="footer" value="/WEB-INF/views/footer.jspx" />
+  </definition>
+
+</tiles-definitions>

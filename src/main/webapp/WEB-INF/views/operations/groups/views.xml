@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+
+    <definition extends="oatwocolumns" name="operations/usermanagement/groups/list">
+        <put-attribute name="body" value="/WEB-INF/views/operations/groups/list.jspx"/>
+    </definition>
+    
+	<definition extends="oatwocolumns" name="operations/usermanagement/groups/show">
+		<!-- <put-attribute name="topmenu" value="/WEB-INF/views/operations/topmenu.jspx" /> -->
+        <put-attribute name="body" value="/WEB-INF/views/operations/groups/show.jspx"/>
+    </definition>
+    
+	<definition extends="oadefault" name="operations/usermanagement/groups/create">
+		<put-attribute name="topmenu" value="/WEB-INF/views/operations/topmenu.jspx" />
+        <put-attribute name="body" value="/WEB-INF/views/operations/groups/create.jspx"/>
+    </definition>
+    
+	<definition extends="oadefault" name="operations/usermanagement/groups/update">
+		<put-attribute name="topmenu" value="/WEB-INF/views/operations/topmenu.jspx" />
+        <put-attribute name="body" value="/WEB-INF/views/operations/groups/update.jspx"/>
+    </definition>
+    
+</tiles-definitions>
